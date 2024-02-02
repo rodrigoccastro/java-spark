@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "9032cfd0-dbe4-476e-b455-86ee2596f9a2",
+		"name": "axur",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18158995"
+	},
+	"item": [
+		{
+			"name": "start find",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"keyword\": \"license\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4567/crawl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"crawl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show results",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4567/crawl/30vbllyb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"crawl",
+						"30vbllyb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
